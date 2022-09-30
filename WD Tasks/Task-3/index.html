@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Candidate Registration Form
+    </title>
+    <link rel="stylesheet" href="task-3.css">
+</head>
+<!-- <h1 class="title"> Student Enrollment Form </h1> -->
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #ebf1c5;">
+        <marquee behavior="scroll",width="100%" direction="left",height="500]px",vspace="20",hspace="30"> 
+            <p style="color:rgb(19, 20, 20)",style="font-size:8000px;">Candidate Registration Form </p>
+         </marquee> 
+        </nav>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label><mark>Full Name </mark></label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label><mark>City:</mark></label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label><mark>Mobile No:</mark></label>
+                        <input type="text" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label><mark>Email Id:</mark></label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        
+                        <label><mark>Gender:</mark></label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label><mark>Course:<mark></label>
+                        <input type="text" name="course" id="course">
+                    </div>
+                    <div>
+                        <label><Mark>Skills:</Mark></label>
+                        <input type="text" name="Skills" id="Skills">
+                    </div>
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="REGISTER">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="studentList">
+                    <thead>
+                        <h2> Candidate Information</h2>
+                        <tr>
+                            <th>Full Name </th>
+                            <th>City </th>
+                            <th>Mobile No </th>
+                            <th>Email Id </th>
+                            <th>Gender </th>
+                            <th>Course </th>
+                            <th>Skills</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="task-3.js"></script>
+</body>
+
+</html>
+
